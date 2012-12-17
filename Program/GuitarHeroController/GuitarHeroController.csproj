@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>24916ed7-d4df-4ab8-a814-0fa8369ec156</ProjectGuid>
+    <ProjectGuid>{F3E51F59-6987-42CC-BEC8-3087FF647BDF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GuitarHeroController</RootNamespace>
@@ -33,6 +33,19 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CKinect.cs" />
+    <Compile Include="CLogic.cs" />
+    <Compile Include="CMusicStream.cs" />
+    <Compile Include="CNote.cs" />
+    <Compile Include="CShadow.cs" />
+    <Compile Include="CString.cs" />
+    <Compile Include="MusicHit.cs" />
+    <Compile Include="Note.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

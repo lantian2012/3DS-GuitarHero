@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>4a254660-5c6f-43d0-9f82-e09065629fd6</ProjectGuid>
+    <ProjectGuid>{1233860D-9302-42ED-BBA9-C14F95873C4F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GuitarHeroModel</RootNamespace>
