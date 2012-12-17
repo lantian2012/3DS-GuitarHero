@@ -24,5 +24,15 @@ namespace GuitarHeroView
             InitializeComponent();
         }
 
+        #region Private State
+        private const int TimerResolution = 2;
+        private const double MaxFramerate = 70;
+        private const double MinFramerate = 15;
+        private DateTime lastFrameDrawn = DateTime.MinValue;
+        private DateTime predNextFrame = DateTime.MinValue;
+        private double targetFramerate = MaxFramerate;
+        private int frameCount;
+        private bool runningGameThread;
+        #endregion
     }
 }

@@ -3,11 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="768" Width="1024">
     <Grid x:Name="MainWindowGrid" Background="Black">
-        <Button x:Name="BtnGamePage" Content="Start Game" HorizontalAlignment="Left" Margin="632,216,0,0" VerticalAlignment="Top" Width="141" Height="40" Foreground="White" Background="{x:Null}" BorderBrush="White" BorderThickness="3" FontSize="20" Click="BtnGamePage_Click">
+        <Button x:Name="BtnGamePage" Content="Start Game" HorizontalAlignment="Left" Margin="632,216,0,0" VerticalAlignment="Top" Width="141" Height="40" Foreground="White" Background="{x:Null}" BorderBrush="White" BorderThickness="3" FontSize="20"  Opacity="0" Click="BtnGamePage_Click">
         </Button>
-        <Button x:Name="BtnOptionPage" Content="Options" HorizontalAlignment="Left" Margin="632,298,0,0" VerticalAlignment="Top" Width="141" Height="40" Foreground="White" Background="{x:Null}" BorderBrush="White" BorderThickness="3" FontSize="20">
+        <Button x:Name="BtnOptionPage" Content="Options" HorizontalAlignment="Left" Margin="632,298,0,0" VerticalAlignment="Top" Width="141" Height="40" Foreground="White" Background="{x:Null}" BorderBrush="White" BorderThickness="3" FontSize="20" Opacity="0">
         </Button>
-        <Button x:Name="BtnRankPage" Content="Rank" HorizontalAlignment="Left" Margin="632,379,0,0" VerticalAlignment="Top" Width="141" Height="40" Foreground="White" Background="{x:Null}" BorderBrush="White" BorderThickness="3" FontSize="20"/>
+        <Button x:Name="BtnRankPage" Content="Rank" HorizontalAlignment="Left" Margin="632,379,0,0" VerticalAlignment="Top" Width="141" Height="40" Foreground="White" Background="{x:Null}" BorderBrush="White" BorderThickness="3" FontSize="20" Opacity="0"/>
         <Grid.Triggers>
             <EventTrigger RoutedEvent="Grid.Loaded">
                 <BeginStoryboard>

@@ -5,9 +5,9 @@ Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "GuitarHero", "GuitarHero\Gu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuitarHeroView", "GuitarHeroView\GuitarHeroView.csproj", "{97DB7218-A2CF-40D3-9720-A98823AA771A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuitarHeroController", "GuitarHeroController\GuitarHeroController.csproj", "{F3E51F59-6987-42CC-BEC8-3087FF647BDF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuitarHeroController", "GuitarHeroController\GuitarHeroController.csproj", "{9CEF62CB-D20D-4D39-833A-7D36CA7245DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuitarHeroModel", "GuitarHeroModel\GuitarHeroModel.csproj", "{1233860D-9302-42ED-BBA9-C14F95873C4F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuitarHeroModel", "GuitarHeroModel\GuitarHeroModel.csproj", "{986D5392-B749-4496-B16D-821FA8759F53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,14 +23,14 @@ Global
 		{97DB7218-A2CF-40D3-9720-A98823AA771A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97DB7218-A2CF-40D3-9720-A98823AA771A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97DB7218-A2CF-40D3-9720-A98823AA771A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F3E51F59-6987-42CC-BEC8-3087FF647BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F3E51F59-6987-42CC-BEC8-3087FF647BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F3E51F59-6987-42CC-BEC8-3087FF647BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F3E51F59-6987-42CC-BEC8-3087FF647BDF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1233860D-9302-42ED-BBA9-C14F95873C4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1233860D-9302-42ED-BBA9-C14F95873C4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1233860D-9302-42ED-BBA9-C14F95873C4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1233860D-9302-42ED-BBA9-C14F95873C4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CEF62CB-D20D-4D39-833A-7D36CA7245DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CEF62CB-D20D-4D39-833A-7D36CA7245DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CEF62CB-D20D-4D39-833A-7D36CA7245DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CEF62CB-D20D-4D39-833A-7D36CA7245DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{986D5392-B749-4496-B16D-821FA8759F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{986D5392-B749-4496-B16D-821FA8759F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{986D5392-B749-4496-B16D-821FA8759F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{986D5392-B749-4496-B16D-821FA8759F53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
