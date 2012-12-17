@@ -10,19 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace GuitarHeroView
+namespace WpfApplication1
 {
     /// <summary>
-    /// VGamePage.xaml 的交互逻辑
+    /// MusicNote.xaml 的交互逻辑
     /// </summary>
-    public partial class VGamePage : Window
+    public partial class VNote : UserControl
     {
-        public VGamePage()
+        public VNote()
         {
             InitializeComponent();
         }
-
     }
 }

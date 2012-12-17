@@ -24,5 +24,11 @@ namespace GuitarHeroView
         {
             InitializeComponent();
         }
+
+        private void BtnGamePage_Click(object sender, RoutedEventArgs e)
+        {
+            VGamePage gamepage = new VGamePage();
+            gamepage.Show();
+        }
     }
 }
