@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="59c725c3-3750-4ecd-a167-b1bbea67c187" name="GuitarHero" linkedPackageId="2c23bbde-7b98-4892-8c30-376571a4bf62" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="62dbcb05-4f85-4906-a17d-0ca68aed9801">
+      <profileInstance Id="a7254767-1085-4548-8cee-c1660f6cafb8" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5bf5522c-32b9-49ec-9f1a-95113b387dfc">
+      <profileInstance Id="e06588c3-9f7e-4ebe-80a3-6c85f5b1f173" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ca07fa27-6cc1-4241-ba26-283b22965906" name="Player1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dee639b8-294d-47d3-97d7-c43c33ec27f6" />
+        <targetEnds>
+          <association Id="399807e7-7854-4ad8-98ec-c4a095cd55e0" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="PLAY!!!" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9ac8113f-cf37-44ed-97eb-62278ce5e026" LastKnownName="PLAY!!!" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c1b70216-d42e-4bbf-8913-67189be7d7df" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="463eed8c-4920-4240-bb8c-fc27ce0d2a88" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f3cbcdaa-c03b-4bb8-8f48-abbd76fa15c4" name="PLAY!!!" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1e36a1f8-7efd-4167-a2b0-dc9bd6674f85" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aa60871a-221e-446d-bd10-a32d3fb04251" />
+          </association>
+          <association Id="970ced06-70e0-4e9a-a2eb-2b81e44d7a6b" isDerived="false" sourceEndRoleName="Player1" targetEndRoleName="Back" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0fc438c2-833e-4a1f-90a3-464e66275ba4" LastKnownName="Back" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a56efac5-82a0-4000-b83b-521d4f181bbf" name="Player1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cdc82dad-ab79-47e6-a2e8-aa355d195681" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="872d1919-038a-418b-ac2f-c14e70ad9f50" name="Back" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bc5b92bc-7f30-489a-ab9a-2a75f8b22952" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="eee4db89-aa3f-4239-93f0-7f43cb2537c5" />
+          </association>
+          <association Id="19c8cb10-061f-441b-bad9-98406ef7c4ac" isDerived="false" sourceEndRoleName="Player1" targetEndRoleName="CheckRank" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4dc53b2f-bc80-4cfd-93d2-49e8047d56d5" LastKnownName="Check Rank" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7b20b825-c3c3-4edb-94ea-4796526d4636" name="Player1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f597a02e-6c99-48eb-a7c8-265a9c77e48e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a3f89059-86ea-4def-becf-77ca736aaa84" name="CheckRank" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8b7823ac-3201-4bdc-8040-5987f84bfd8b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6d270fce-06d4-436b-9b16-03308f6c568e" />
+          </association>
+          <association Id="59983c8d-aa27-4718-8e7e-a18a7a882809" isDerived="false" sourceEndRoleName="Player1" targetEndRoleName="Help" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="25839a90-7c3e-49a5-96e8-627a49947ce0" LastKnownName="See Help" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8ac3373f-b647-4c65-b18e-b8f1ef3d20f0" name="Player1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a917a811-ea26-4a8e-91c8-b2927c8ab9b9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="78e0c302-f4ba-4ff9-8ad5-6fba6ac33788" name="Help" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cc20d0d3-d6fe-4edd-8776-be8725c781c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="436d2807-3474-4fe5-9c51-6801d080e381" />
+          </association>
+          <association Id="2a6fc8ea-013a-402b-8374-7d9b2f5b255f" isDerived="false" sourceEndRoleName="Player1" targetEndRoleName="Configurate" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a9f28ec0-4c7b-4c9c-8632-b670ec782e6a" LastKnownName="Configurate" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c60a6122-9c44-47dc-8f91-ebeff4d5de34" name="Player1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5c846bc0-370c-44c9-8927-c830fbcf8ffe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b8e5b6ed-811b-47c0-9727-f07acf06b010" name="Configurate" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0dcd3a2f-08c4-469f-a751-92fc8e9d33b1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9ae4a2ee-312f-45c6-a6a5-843a7bbe4358" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9ac8113f-cf37-44ed-97eb-62278ce5e026" name="PLAY!!!" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e8974f9c-00e6-4e6e-844e-ef618afd70e5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0fc438c2-833e-4a1f-90a3-464e66275ba4" name="Back" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="43f66e72-5bdf-4077-abe5-8df8a04c51d6" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="25839a90-7c3e-49a5-96e8-627a49947ce0" name="See Help" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c084791b-56b3-4f1c-a428-06cd585a478b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4dc53b2f-bc80-4cfd-93d2-49e8047d56d5" name="Check Rank" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="637d2f06-8346-4296-9a7f-cb0da36c4406" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a9f28ec0-4c7b-4c9c-8632-b670ec782e6a" name="Configurate" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cbdded3c-4526-43dd-83e5-f8360329852b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="2c23bbde-7b98-4892-8c30-376571a4bf62" name="GuitarHero">
+    <elementDefinition Id="8a83e0ab-4c98-40f9-a641-87dfe87c7c59" />
+  </package>
+</useCaseModelRoot>

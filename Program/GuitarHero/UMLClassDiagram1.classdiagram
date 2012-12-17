@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="fda6113f-989b-44b3-bb06-88515a863bd2" name="UMLClassDiagram1" linkedPackageId="5d7cf995-4732-4402-802d-141b010275d6" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="140f3d1e-2f7b-4f21-9bef-bf0ecd926d73" name="View">
+        <elementDefinition Id="05213abc-9e1e-4ba5-883c-27a1a060072d" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <package Id="2e84f7d3-a3a0-4739-99ff-b821cfcc5867" name="VStartPage">
+              <elementDefinition Id="accb8953-8ec1-4248-b9ef-a4834e4d8434" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="937b4d65-af2c-4fd2-a870-965da2644b99" name="VStartPage" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="405f6341-43d6-44fb-9cc4-e6c7359a4b36" />
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="16b8b252-391d-49dd-bf13-0fc0d0dea41a" name="VGamePage">
+              <elementDefinition Id="04d607b0-5c04-4fbd-beaf-54bb2d114945" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="30fd9a59-9c1b-4c2d-87a9-4e4c35643f2f" name="VNote" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="00da8c27-47ef-4b6d-9dd1-4665e7e60dac" />
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="e3899303-ee06-45f3-93fe-4161467fc384" name="VBackground" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="0e814fc3-1fa6-4810-9635-b22f6df51fdc" />
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="f262dcb8-3b19-4fe9-9d33-30e9add266b7" name="VShadow" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="e5da2a94-4ce0-46cf-8139-9414de56820b" />
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="312fd639-9868-48fd-8fc5-09a350205988" name="VStrings" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="f27fa652-6a36-43b3-bba5-a3de73449d8d" />
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="84d3c3f4-ba62-43ff-a77f-fc4632f048b9" name="VInfoBoard" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="79f22c96-31c1-4fee-87d0-f91356979c36" />
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="e4acb928-c757-45cd-bf9e-937d94b3abca" name="VHelpPage">
+              <elementDefinition Id="8d051f30-950f-405a-aa62-b5e12fa44d9c" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="a6f8cfe7-787a-4888-806d-1197f172dfff" name="VHelpPage" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="0054049d-59fc-4451-a85c-4d987cd08761" />
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="7aa5bccc-c521-4424-960a-e8baaf824939" name="VOptionPage">
+              <elementDefinition Id="d988b039-82e2-48ce-b811-2378d3408484" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="c6090719-e636-4005-b613-70a709a5c2bd" name="VOptionPage" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="debff229-96d0-4e4c-bf40-3d82b56d1370" />
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="3e84f070-4f0a-41b3-ab3e-d8eb0c76707f" name="VRankPage">
+              <elementDefinition Id="e6dfb471-6f3a-45f6-9b83-dfa941e8e0d8" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="9c51a43c-ab88-4f26-9183-bd0207307776" name="VRankPage" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="f6f88d89-fb2e-4a08-a142-670a930e905e" />
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="9bf3f231-336f-47b8-8492-d19b7510755e" name="Controller">
+        <elementDefinition Id="30d5b398-0ad2-4696-a98f-1e44198d050f" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <package Id="b5d6c3bd-0134-4319-afd5-f03d96b7f5aa" name="CGamePage">
+              <elementDefinition Id="5cb8336e-a1ae-4294-9926-4eacfbf2a443" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="b2088743-d493-45d0-9d23-be276c63b68c" name="CStrings" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="77ba7ba4-2ac6-47e1-b41d-f215a281c358" />
+                    <ownedAttributesInternal>
+                      <property Id="577e7dea-3ae1-4574-94b8-820893aec79f" name="Color" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="e464b99c-897c-4591-baa9-c15b199058cc" />
+                      </property>
+                      <property Id="c6354c84-8190-4d06-9815-91bf2cc636e0" name="Notes" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="9dbc9c4a-f4a4-4fdb-a63f-b7ad3021a961" />
+                      </property>
+                    </ownedAttributesInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="02890e5d-4309-4bbd-a6ed-8e4151d633cd" name="advanceFrame" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="856db73b-8f21-4b6f-afeb-a3c6a47d7cab" />
+                      </operation>
+                      <operation Id="d15c365f-e972-445f-aeba-2cabec29795f" name="isReadyForHit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="54f8264b-b27f-4c63-9497-690a3a0a7c2a" />
+                      </operation>
+                      <operation Id="4e3aa49e-05f8-48b9-8c39-48433e154a81" name="hit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="27e435ce-251e-42c5-9273-76c27c5318fb" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="aec1a414-f195-41a8-b2cf-80fb544fadae" name="CKinect" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="dc6581f0-f2a8-469e-b1fa-68361cdb9428" />
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="32db43f6-a4ed-43ca-a987-e3c0f552c311" name="CLogic" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="ea521fce-ec18-4be9-8aca-1143e002e628" />
+                    <ownedAttributesInternal>
+                      <property Id="a90cd877-448b-4b34-b350-eb7e24cd46fa" name="CNote" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="4a1a8f3f-ada3-4cb1-a0a3-e66079505563" />
+                      </property>
+                      <property Id="1feb5f07-b8fa-4c5c-968d-eb0fe0a7c92c" name="MusicHit" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="7a2a0019-317b-4828-904d-fba9dfcf3ba1" />
+                      </property>
+                      <property Id="cbf9f995-15a5-4b4e-9922-7b41dbf0cfcc" name="CShadow" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="ef33a60c-c264-4712-a9f9-a21dd35dd3ca" />
+                      </property>
+                      <property Id="60dd3c89-ae55-4706-8296-27db85737a78" name="Score" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="a0b1c2a1-aa76-4e2f-ad08-d5c79a5ce8ff" />
+                      </property>
+                      <property Id="12185bcf-7323-4fe7-a2ae-5c302639464e" name="Timer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="1dc3ccbb-dc54-49cf-9077-28aec3297026" />
+                      </property>
+                      <property Id="574db04b-ad23-4a99-b709-20365068a830" name="isScorable" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="b642042f-1a27-4820-b2cd-83b91d82b255" />
+                      </property>
+                      <property Id="56926e1d-133f-4ad4-9c9c-a46305af97df" name="isGameOver" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="d2744527-5c35-4df0-96eb-c5a7e1e5e16f" />
+                      </property>
+                    </ownedAttributesInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="66ea852c-401d-4e33-b53a-ade9a7a2637f" name="CMusicStream" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="6b7ab7d1-230b-4874-8ec9-c3e3e18c64fb" />
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="a4aa36bd-bba0-421a-9a23-ca1241c3e045" name="CNote" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="88c1697e-d1bd-44ad-8bbd-e69f11f90403" />
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="a64e417b-a2c5-48b7-8cdf-21aedf7ba505" name="Note" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="b6709654-7de3-4aa1-8eae-8408955c9c14" />
+                    <ownedAttributesInternal>
+                      <property Id="e950222f-2991-41b9-94d6-eac347f0b92f" name="Color" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="531729a0-64e5-41a7-9bd2-c9a94efa063b" />
+                      </property>
+                      <property Id="05899738-55a8-499f-9744-fa071ac6dfe9" name="Height" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="5165fd62-56e2-4568-80b8-bf287d3ac784" />
+                      </property>
+                      <property Id="3d3c3097-15ca-4fa2-b222-ae0a2de02fda" name="Speed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="ec4aa5a3-59f6-4add-8d8b-3be6e7099502" />
+                      </property>
+                      <property Id="cbc001a3-0efa-4a68-9096-5eaee6cd892c" name="Width" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="c68305b1-271e-4802-979b-84c3a0b2dcfc" />
+                      </property>
+                      <property Id="e199c62e-9c58-4877-a851-5edfe55bc9d7" name="X" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="27a9e4c4-a339-45e6-86b7-a51602e16ae3" />
+                      </property>
+                      <property Id="9392665c-d449-4c43-86de-6b39807266f7" name="Y" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="6fcab3ba-7cf7-450c-bf6f-f9f7dc7fbd88" />
+                      </property>
+                    </ownedAttributesInternal>
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="16d5f7b2-bd17-4399-92e8-d70014349d9d" name="COptionPage">
+              <elementDefinition Id="aa283945-f051-45f5-a20e-0005339c2991" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="d03f2eb1-6e0f-4602-9f4e-098e658ee1c5" name="COptionController" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="2a07ba84-341a-427f-a0b8-f2c13d21f627" />
+                    <ownedOperationsInternal>
+                      <operation Id="49c1118e-8fe9-43a6-9316-9479aec2fdf9" name="LoadOption" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="c18dd465-f99b-42d7-9db6-2325bd0fa90e" />
+                      </operation>
+                      <operation Id="81a83d3c-5072-41ea-a759-68a252a089f8" name="SaveOption" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="5b9b4e12-8241-4def-be4e-12fdffb8d0e3" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="8f0aa076-d8d9-4557-a224-565b0d82fb1b" name="CRankPage">
+              <elementDefinition Id="f91c6efd-b344-4557-9ef3-442056e9bd62" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="237fc821-485e-4b93-9f08-8439748a86d6" name="CRankController" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="a33cf6a0-7c06-4707-b85b-27d15f2abec7" />
+                    <ownedOperationsInternal>
+                      <operation Id="98c4158b-e177-4c92-9cec-0b6c595dbea8" name="LoadRank" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="c9b73453-1685-423e-b743-3a2655d9a0a0" />
+                      </operation>
+                      <operation Id="bee05275-ed7e-4d33-8f2c-8da140ca3cef" name="SaveRank" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="a30751b9-6bb6-4383-bdee-6275537ed0d4" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="4652d8dd-3aae-4d7e-ad40-68bd18525167" name="CHelpPage">
+              <elementDefinition Id="bde11284-cce4-4346-a7f6-ac83ee3fee4e" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="3e660679-f3dd-4f22-bd03-e24a9603b567" name="CHelpController" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="846be02c-f070-416a-969d-ac5cbc364fc3" />
+                    <ownedOperationsInternal>
+                      <operation Id="a0254e24-75e4-42c2-9ac5-ca66eb59cb23" name="LoadHelp" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="a97cae3b-fcb9-4f00-a6bd-1e0404192541" />
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="ce31c8fa-5c47-4726-bce5-11980dba4893" name="Model">
+        <elementDefinition Id="cf40f240-4461-4975-8c6f-46f3d2f257c3" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="247f9874-cdf4-4a38-8244-d2693e3713e0" name="Kinect" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="01403e2a-a31d-4827-b799-c17f17e89b5f" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="14a6930a-89f9-4c4b-8609-954ec8a0ddf9" name="MHelp" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="cfd680a8-d598-43d4-8f4b-6acacf2bbcae" />
+              <ownedOperationsInternal>
+                <operation Id="207b7967-137b-410a-9c42-fd20ff19d182" name="LoadHelpFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="942031e5-3e89-4197-bd5e-3c765f6986f8" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="e8b926f2-1d02-4524-9e69-f1c41e7e92c6" name="MOption" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6884f875-5cb4-4057-8377-c11bc1d6c5c8" />
+              <ownedAttributesInternal>
+                <property Id="5ec5f188-d544-4eb2-887a-3df0a767a19c" name="Difficulty" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d25ab1d8-e420-44f2-9588-0f61214ccf9d" />
+                </property>
+                <property Id="81d5366c-7585-4d02-b95e-b260763752f6" name="StringNumber" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f509e8bc-0e81-4992-a150-834e93ba4a18" />
+                </property>
+                <property Id="07e672b0-6286-4191-93d6-6ff40eaf8fe8" name="Music" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="87f21d5e-196f-4dd6-abab-c8d0946edf96" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="f22c3693-e539-47c9-963a-adee2e105293" name="LoadOptionFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="79026a65-b428-4920-aba4-5fce2d67d2af" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f0cb0fce-6fa4-4307-ab73-a3e4560f1982" name="MRank" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5b023136-deae-44d0-bb68-53d71ff1e60a" />
+              <ownedOperationsInternal>
+                <operation Id="a5f58745-4be8-4190-ae3e-2811a97201a1" name="LoadRankFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c7bed920-74bd-477a-b4fa-902989ac3357" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="0154545d-8f18-46c4-a541-06c072498324" name="MMusic" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="de732ade-b582-46c4-819c-a361a225a6bf" />
+              <ownedAttributesInternal>
+                <property Id="77bcfa35-505d-4e8a-93f2-c48042e6370c" name="MusicName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b494229f-74ee-4aeb-ab38-4ad6cf57ef5f" />
+                </property>
+                <property Id="0cbda9f6-88c0-4c55-af29-4f89919a8253" name="MusicPath" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f03ccd9a-b40c-4ee3-ad8c-24a3430484fc" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="1e109577-b47b-4425-aca3-4ccbe2b7b179" name="LoadMusicFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a0203451-77f9-41ec-ab9f-34744f57aaf8" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="5d7cf995-4732-4402-802d-141b010275d6" name="GuitarHero">
+    <elementDefinition Id="8a83e0ab-4c98-40f9-a641-87dfe87c7c59" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9ed74477-5183-4f65-a097-683eda5f2d4e">
+        <profileInstance Id="a0c6d696-521d-48bf-85fc-9b05eb9f4832" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f1f1a0de-c17b-462d-9e24-ceef5dd234f5">
+        <profileInstance Id="82fa8629-0f84-416e-a7ed-e75b9b0fdcec" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

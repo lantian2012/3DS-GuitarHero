@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="8a83e0ab-4c98-40f9-a641-87dfe87c7c59"
+  name="GuitarHero" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="05213abc-9e1e-4ba5-883c-27a1a060072d"
+        LastKnownName="View"
+        LastKnownLocation="Package_2152.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="30d5b398-0ad2-4696-a98f-1e44198d050f"
+        LastKnownName="Controller"
+        LastKnownLocation="Package_2154.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="cf40f240-4461-4975-8c6f-46f3d2f257c3"
+        LastKnownName="Model"
+        LastKnownLocation="Package_2334.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="dee639b8-294d-47d3-97d7-c43c33ec27f6"
+        name="Player1"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="aa60871a-221e-446d-bd10-a32d3fb04251"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="PLAY!!!"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e8974f9c-00e6-4e6e-844e-ef618afd70e5"
+              LastKnownName="PLAY!!!"
+              LastKnownLocation="GuitarHero.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="463eed8c-4920-4240-bb8c-fc27ce0d2a88"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1e36a1f8-7efd-4167-a2b0-dc9bd6674f85"
+                  name="PLAY!!!"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="eee4db89-aa3f-4239-93f0-7f43cb2537c5"
+            isDerived="false"
+            sourceEndRoleName="Player1"
+            targetEndRoleName="Back"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="43f66e72-5bdf-4077-abe5-8df8a04c51d6"
+              LastKnownName="Back"
+              LastKnownLocation="GuitarHero.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cdc82dad-ab79-47e6-a2e8-aa355d195681"
+                  name="Player1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bc5b92bc-7f30-489a-ab9a-2a75f8b22952"
+                  name="Back"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6d270fce-06d4-436b-9b16-03308f6c568e"
+            isDerived="false"
+            sourceEndRoleName="Player1"
+            targetEndRoleName="CheckRank"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="637d2f06-8346-4296-9a7f-cb0da36c4406"
+              LastKnownName="Check Rank"
+              LastKnownLocation="GuitarHero.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f597a02e-6c99-48eb-a7c8-265a9c77e48e"
+                  name="Player1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8b7823ac-3201-4bdc-8040-5987f84bfd8b"
+                  name="CheckRank"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="436d2807-3474-4fe5-9c51-6801d080e381"
+            isDerived="false"
+            sourceEndRoleName="Player1"
+            targetEndRoleName="Help"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c084791b-56b3-4f1c-a428-06cd585a478b"
+              LastKnownName="See Help"
+              LastKnownLocation="GuitarHero.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a917a811-ea26-4a8e-91c8-b2927c8ab9b9"
+                  name="Player1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cc20d0d3-d6fe-4edd-8776-be8725c781c5"
+                  name="Help"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9ae4a2ee-312f-45c6-a6a5-843a7bbe4358"
+            isDerived="false"
+            sourceEndRoleName="Player1"
+            targetEndRoleName="Configurate"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="cbdded3c-4526-43dd-83e5-f8360329852b"
+              LastKnownName="Configurate"
+              LastKnownLocation="GuitarHero.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c846bc0-370c-44c9-8927-c830fbcf8ffe"
+                  name="Player1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0dcd3a2f-08c4-469f-a751-92fc8e9d33b1"
+                  name="Configurate"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e8974f9c-00e6-4e6e-844e-ef618afd70e5"
+        name="PLAY!!!"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="43f66e72-5bdf-4077-abe5-8df8a04c51d6"
+        name="Back"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c084791b-56b3-4f1c-a428-06cd585a478b"
+        name="See Help"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="637d2f06-8346-4296-9a7f-cb0da36c4406"
+        name="Check Rank"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cbdded3c-4526-43dd-83e5-f8360329852b"
+        name="Configurate"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

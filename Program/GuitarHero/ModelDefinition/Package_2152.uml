@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="05213abc-9e1e-4ba5-883c-27a1a060072d"
+  name="View" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="accb8953-8ec1-4248-b9ef-a4834e4d8434"
+        LastKnownName="StartPage"
+        LastKnownLocation="Package_2155.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="04d607b0-5c04-4fbd-beaf-54bb2d114945"
+        LastKnownName="GamePage"
+        LastKnownLocation="Package_2156.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8d051f30-950f-405a-aa62-b5e12fa44d9c"
+        LastKnownName="HelpPage"
+        LastKnownLocation="Package1_2156.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="d988b039-82e2-48ce-b811-2378d3408484"
+        LastKnownName="OptionPage"
+        LastKnownLocation="Package2_2156.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e6dfb471-6f3a-45f6-9b83-dfa941e8e0d8"
+        LastKnownName="RankPage"
+        LastKnownLocation="Package_2157.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

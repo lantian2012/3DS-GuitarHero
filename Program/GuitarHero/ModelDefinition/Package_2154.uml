@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="30d5b398-0ad2-4696-a98f-1e44198d050f"
+  name="Controller" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="5cb8336e-a1ae-4294-9926-4eacfbf2a443"
+        LastKnownName="CGamePage"
+        LastKnownLocation="Package_2224.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="aa283945-f051-45f5-a20e-0005339c2991"
+        LastKnownName="COptionPage"
+        LastKnownLocation="Package_2225.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f91c6efd-b344-4557-9ef3-442056e9bd62"
+        LastKnownName="CRankPage"
+        LastKnownLocation="Package_2300.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="bde11284-cce4-4346-a7f6-ac83ee3fee4e"
+        LastKnownName="CHelpPage"
+        LastKnownLocation="Package1_2304.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
