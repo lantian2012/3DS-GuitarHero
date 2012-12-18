@@ -8,5 +8,9 @@ namespace GuitarHeroController
 {
     class CShadow
     {
+        int rightX;
+        int rightY;
+        int leftX;
+        int rightY;
     }
 }

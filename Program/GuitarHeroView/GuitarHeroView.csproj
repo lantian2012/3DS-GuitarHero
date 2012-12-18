@@ -53,17 +53,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="VNote.xaml.cs">
-      <DependentUpon>VNote.xaml</DependentUpon>
-    </Compile>
     <Compile Include="VGamePage.xaml.cs">
       <DependentUpon>VGamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VNote.xaml.cs">
+      <DependentUpon>VNote.xaml</DependentUpon>
     </Compile>
     <Compile Include="VOptionPage.xaml.cs">
       <DependentUpon>VOptionPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="VRankPage.xaml.cs">
       <DependentUpon>VRankPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VStartPage.xaml.cs">
+      <DependentUpon>VStartPage.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -77,19 +80,23 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="VNote.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="VGamePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VNote.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="VOptionPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="VRankPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VStartPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

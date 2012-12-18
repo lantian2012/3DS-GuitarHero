@@ -16,19 +16,18 @@ using System.Windows.Shapes;
 namespace GuitarHeroView
 {
     /// <summary>
-    /// MainWindow.xaml 的交互逻辑
+    /// VStartPage.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow :NavigationWindow
+    public partial class VStartPage : Page
     {
-        public MainWindow()
+        public VStartPage()
         {
             InitializeComponent();
         }
 
         private void BtnGamePage_Click(object sender, RoutedEventArgs e)
         {
-            /*VGamePage gamepage = new VGamePage();
-            gamepage.Show();*/
+            NavigationService.Navigate(new Uri("VGamePage.xaml", UriKind.Relative));
         }
     }
 }

@@ -8,7 +8,7 @@ using System.ComponentModel;
 namespace GuitarHeroController
 {
 
-    class CLogic : INotifyPropertyChanged
+    public class CLogic : INotifyPropertyChanged
     {
         #region Attributes
         public event PropertyChangedEventHandler PropertyChanged;
@@ -22,6 +22,7 @@ namespace GuitarHeroController
         private CNote _CNote;
         private CShadow _CShadow;
         private MusicHit _MusicHit;
+        private bool isGameOver;
         public bool isGameOver { get; set;}
         public bool isScorable { get; set;}
         private int _Score;
@@ -44,6 +45,9 @@ namespace GuitarHeroController
                 NotifyPropertyChanged("Progress");
             }
         }
+
         #endregion
+
+        
     }
 }

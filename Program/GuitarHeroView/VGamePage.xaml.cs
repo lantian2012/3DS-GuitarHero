@@ -10,29 +10,55 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GuitarHeroController;
+using System.Timers;
 
 namespace GuitarHeroView
 {
     /// <summary>
     /// VGamePage.xaml 的交互逻辑
     /// </summary>
-    public partial class VGamePage : Window
+    public partial class VGamePage : Page
     {
         public VGamePage()
         {
             InitializeComponent();
+            this.ell.Fill = Brushes.Red;
+        }
+        private Timer aTimer;
+        private void Page_Loaded_1(object sender, RoutedEventArgs e)
+        {
+            
+            aTimer = new System.Timers.Timer(33);
+            aTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
+            //remember not to be disposed
+            aTimer.Start();
+        }
+        private void OnTimedEvent(object source, ElapsedEventArgs e)
+        {
+
         }
 
-        #region Private State
-        private const int TimerResolution = 2;
-        private const double MaxFramerate = 70;
-        private const double MinFramerate = 15;
-        private DateTime lastFrameDrawn = DateTime.MinValue;
-        private DateTime predNextFrame = DateTime.MinValue;
-        private double targetFramerate = MaxFramerate;
-        private int frameCount;
-        private bool runningGameThread;
+        #region Attributes
+        private CLogic _Clogic;
+        #endregion
+
+
+        #region Graphics Operations
+        private void initializeGameField(int numberOfStrings)
+        {
+            for (int i = 0; i < numberOfStrings; i++)
+            {
+                GameBoard.ColumnDefinitions.Add(new ColumnDefinition());
+            }
+        }
+        private void addNote(int stringNumber)
+        {
+            VNote note = new VNote();
+        }
         #endregion
     }
+
 }

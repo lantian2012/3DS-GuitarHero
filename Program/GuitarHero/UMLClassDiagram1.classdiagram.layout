@@ -214,11 +214,11 @@
             <OperationElementListCompartment Id="75498038-59b2-487d-adb2-e8288a613816" absoluteBounds="9.265, 3.001318359375, 1.5950000000000002, 0.40323893229166663" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
           </nestedChildShapes>
         </classShape>
-        <classShape Id="9f455738-8ed2-4c8e-a4a1-3bd0e9f7df20" absoluteBounds="8, 3.625, 1.625, 1.4833984375" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+        <classShape Id="9f455738-8ed2-4c8e-a4a1-3bd0e9f7df20" absoluteBounds="9.25, 3.625, 1.625, 1.4833984375" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
           <classMoniker Id="0154545d-8f18-46c4-a541-06c072498324" LastKnownName="MMusic" />
           <nestedChildShapes>
-            <AttributeElementListCompartment Id="02870b05-a014-49fe-8ae9-3445532c22c5" absoluteBounds="8.015, 4.0150000000000006, 1.5950000000000002, 0.58015950520833326" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-            <OperationElementListCompartment Id="e74a71da-42d9-40c2-bf25-887700636ec2" absoluteBounds="8.015, 4.6051595052083334, 1.5950000000000002, 0.40323893229166663" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+            <AttributeElementListCompartment Id="02870b05-a014-49fe-8ae9-3445532c22c5" absoluteBounds="9.265, 4.0150000000000006, 1.5950000000000002, 0.58015950520833326" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+            <OperationElementListCompartment Id="e74a71da-42d9-40c2-bf25-887700636ec2" absoluteBounds="9.265, 4.6051595052083334, 1.5950000000000002, 0.40323893229166663" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
           </nestedChildShapes>
         </classShape>
       </nestedChildShapes>

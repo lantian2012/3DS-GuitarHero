@@ -9,8 +9,9 @@ namespace GuitarHeroController
     class CNote
     {
         #region Attributes
-        private List<CString> strings;
-        private int frameRate;
+        private List<CString> Strings;
+        private int FrameRate;
+        private int Speed;
         #endregion
 
         /// <summary>
@@ -20,12 +21,12 @@ namespace GuitarHeroController
         public CNote(int numberOfStrings)
         {
             string[] colors = new string[] { "Aquamarine", "Crimson", "DarkOliveGreen", "Gray" };
-            frameRate = 1;
-            strings = new List<CString>();
+            FrameRate = 1;
+            Strings = new List<CString>();
             for (int i = 0; i < numberOfStrings; i++)
             {
-                strings.Add(new CString());
-                strings[i].color = colors[i];
+                Strings.Add(new CString());
+                Strings[i].color = colors[i];
             }
         }
 
@@ -34,14 +35,14 @@ namespace GuitarHeroController
         /// </summary>
         public void advanceFrame()
         {
-            foreach (CString stringitem in strings)
-                stringitem.advanceFrame(frameRate);
+            foreach (CString stringitem in Strings)
+                stringitem.advanceFrame(FrameRate);
         }
 
-        public Note addNewNote(int stringNumber, int speed)
+        public Note addNewNote(int stringNumber)
         {
-            strings[stringNumber].notes.Add(new Note(speed, strings[stringNumber].color));
-            return strings[stringNumber].notes[strings[stringNumber].notes.Count - 1];
+            Strings[stringNumber].notes.Add(new Note(Speed, Strings[stringNumber].color));
+            return Strings[stringNumber].notes[Strings[stringNumber].notes.Count - 1];
         }
     }
 }

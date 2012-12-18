@@ -30,6 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Kinect, Version=1.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,7 +41,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CKinect.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="CLogic.cs" />
     <Compile Include="CMusicStream.cs" />
     <Compile Include="CNote.cs" />
