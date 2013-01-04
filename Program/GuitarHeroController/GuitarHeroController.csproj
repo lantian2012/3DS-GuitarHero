@@ -33,6 +33,8 @@
     <Reference Include="Microsoft.Kinect, Version=1.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,11 +44,11 @@
   <ItemGroup>
     <Compile Include="CKinect.cs" />
     <Compile Include="CLogic.cs" />
-    <Compile Include="CMusicStream.cs" />
+    <Compile Include="CMusicHit.cs" />
     <Compile Include="CNote.cs" />
+    <Compile Include="CRank.cs" />
     <Compile Include="CShadow.cs" />
     <Compile Include="CString.cs" />
-    <Compile Include="MusicHit.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

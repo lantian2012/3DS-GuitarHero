@@ -1,0 +1,54 @@
+﻿<Page x:Class="GuitarHeroView.VHelpPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1024"
+	Title="VHelpPage">
+    <Grid Margin="0,0,0,0">
+        <Label Content="Guitar" HorizontalAlignment="Left" Margin="92,239,0,0" VerticalAlignment="Top" FontSize="110" Height="152" Width="338" Background="{x:Null}" BorderThickness="0">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Red" Offset="0"/>
+                    <GradientStop Color="#FFEA8A00" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="HERO" HorizontalAlignment="Left" Margin="166,338,0,0" VerticalAlignment="Top" FontSize="110" Height="152" Width="338">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEA8A00" Offset="0"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                    <GradientStop Color="#FFF15600" Offset="0.374"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="KINECT" HorizontalAlignment="Left" Margin="98,457,0,0" VerticalAlignment="Top" FontSize="36" Height="56" Width="146" Foreground="#FF6BF10F" Background="{x:Null}"/>
+    <Grid x:Name="OptGrid" Opacity="0.85" Background="#FF151515" Margin="-36,0,421,0">
+        <Grid.Triggers>
+            <EventTrigger RoutedEvent="Grid.Loaded">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ThicknessAnimation Storyboard.TargetName="OptGrid"
+                                Storyboard.TargetProperty="Margin" From="-618,0,1003,0" Duration="0:0:0.6">
+                            <ThicknessAnimation.EasingFunction>
+                                <ExponentialEase EasingMode="EaseOut"></ExponentialEase>
+                            </ThicknessAnimation.EasingFunction>
+                        </ThicknessAnimation>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Grid.Triggers>
+        <Ellipse x:Name="lVShadow"  Fill="#FF1C66B0" HorizontalAlignment="Left" Height="63" Stroke="White"  StrokeThickness="6" VerticalAlignment="Top" Width="64" Margin="123,168,0,0" />
+        <Ellipse x:Name="rVShadow"  Fill="#FFB01C1C" HorizontalAlignment="Left" Height="62" Stroke="White"  StrokeThickness="6" VerticalAlignment="Top" Width="63" Margin="60,168,0,0" />
+        <Ellipse x:Name="note"  Fill="#FF30B01C" HorizontalAlignment="Left" Height="77"  VerticalAlignment="Top" Width="78" Margin="86,291,0,0" />
+        <Label Content="Help" HorizontalAlignment="Left" Margin="315,20,0,0" VerticalAlignment="Top" FontSize="72" Foreground="White" FontFamily="Calibri"/>
+        <Label x:Name="shadowHelp" Content="The shadow of your hands that will move &#xA;in the screen as the way your hands move." HorizontalAlignment="Left" Margin="225,169,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" Width="384" Height="62"/>
+        <Label x:Name="noteHelp" Content="The music note that will drop as the &#xA;rhythm of the music." HorizontalAlignment="Left" Margin="224,306,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" Width="384" Height="62"/>
+        <Label x:Name="direction" Content="Tutorial" HorizontalAlignment="Left" Margin="60,434,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" Width="127" Height="38"/>
+        <Label x:Name="tutorial" Content="In this game, you are required to move &#xA;your hands the hit the notes in the working&#xA;region, one scores for one hit. &#xA;But remeber to move away your hands &#xA;after one hit, keeping your hands in the &#xA;working region all the time will gain no &#xA;score. " HorizontalAlignment="Left" Margin="224,434,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" Width="384" Height="169"/>
+        <Button x:Name="BtnBack" Content="Back" HorizontalAlignment="Left" Margin="265,666,0,0" VerticalAlignment="Top" Width="80" BorderThickness="3" Background="{x:Null}" BorderBrush="White" Foreground="White" Height="31" Click="BtnBack_Click"/>
+    </Grid>
+    </Grid>
+</Page>

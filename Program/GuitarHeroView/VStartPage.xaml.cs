@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GuitarHeroModel;
 
 namespace GuitarHeroView
 {
@@ -23,11 +24,26 @@ namespace GuitarHeroView
         public VStartPage()
         {
             InitializeComponent();
+            //MOptions a = new MOptions();
         }
 
         private void BtnGamePage_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("VGamePage.xaml", UriKind.Relative));
+        }
+
+        private void BtnOptionPage_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("VOptionPage.xaml", UriKind.Relative));
+        }
+
+        private void BtnRankPage_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("VRankPage.xaml", UriKind.Relative));
+        }
+        private void BtnHelpPage_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("VHelpPage.xaml", UriKind.Relative));
         }
     }
 }

@@ -4,11 +4,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="738" d:DesignWidth="250">
+             d:DesignHeight="768" d:DesignWidth="250">
     <Grid>
         <Canvas HorizontalAlignment="Left" Height="768" VerticalAlignment="Top" Width="250">
-            <Ellipse x:Name="myEllipse" Width="100" Height="100" Canvas.Top="{Binding Y}" Canvas.Left="75"
-                     Fill="{Binding color}">
+            <Ellipse x:Name="myEllipse" Width="{Binding Height}" Height="{Binding Height}" Canvas.Top="{Binding Y}" Canvas.Left="75"
+                     Fill="{Binding color}" Opacity="{Binding Opacity}">
             </Ellipse>
         </Canvas>
     </Grid>

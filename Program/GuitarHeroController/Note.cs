@@ -7,7 +7,7 @@ using System.ComponentModel;
 
 namespace GuitarHeroController
 {
-    class Note
+    public class Note : INotifyPropertyChanged
     {
         #region Attributs Defination
         public event PropertyChangedEventHandler PropertyChanged;
@@ -50,14 +50,14 @@ namespace GuitarHeroController
                 NotifyPropertyChanged("Height");
             }
         }
-        private int _Width;
-        public int Width
+        private double _Opacity;
+        public double Opacity
         {
-            get { return _Width; }
+            get { return _Opacity; }
             set
             {
-                _Width = value;
-                NotifyPropertyChanged("Width");
+                _Opacity = value;
+                NotifyPropertyChanged("Opacity");
             }
         }
         private string _color;
@@ -70,18 +70,24 @@ namespace GuitarHeroController
                 NotifyPropertyChanged("color");
             }
         }
-
+        public bool isScorable { get; set; }
+        public bool isAlive { get; set; }
         #endregion
 
         public Note(int s, string c)
         {
-            Width = 125;
-            Height = 70;
-            X = (250 - Width) / 2;
+            Height = 100;
+            Opacity = 1;
+            X = 0;
             Y = 0;
             speed = s;
             color = c;
+            isScorable = true;
+            isAlive = true;
         }
+        
+
+
 
     }
 }

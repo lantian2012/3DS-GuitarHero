@@ -10,35 +10,84 @@
     <Grid x:Name="MainWindowGrid" Background="Black">
         <Button x:Name="BtnGamePage" Content="Start Game" HorizontalAlignment="Left" Margin="632,216,0,0" VerticalAlignment="Top" Width="141" Height="40" Foreground="White" Background="{x:Null}" BorderBrush="White" BorderThickness="3" FontSize="20"  Opacity="0" Click="BtnGamePage_Click">
         </Button>
-        <Button x:Name="BtnOptionPage" Content="Options" HorizontalAlignment="Left" Margin="632,298,0,0" VerticalAlignment="Top" Width="141" Height="40" Foreground="White" Background="{x:Null}" BorderBrush="White" BorderThickness="3" FontSize="20" Opacity="0">
+        <Button x:Name="BtnOptionPage" Content="Options" HorizontalAlignment="Left" Margin="632,298,0,0" VerticalAlignment="Top" Width="141" Height="40" Foreground="White" Background="{x:Null}" BorderBrush="White" BorderThickness="3" FontSize="20" Opacity="0" Click="BtnOptionPage_Click">
         </Button>
-        <Button x:Name="BtnRankPage" Content="Rank" HorizontalAlignment="Left" Margin="632,379,0,0" VerticalAlignment="Top" Width="141" Height="40" Foreground="White" Background="{x:Null}" BorderBrush="White" BorderThickness="3" FontSize="20" Opacity="0"/>
+        <Button x:Name="BtnRankPage" Content="Rank" HorizontalAlignment="Left" Margin="632,379,0,0" VerticalAlignment="Top" Width="141" Height="40" Foreground="White" Background="{x:Null}" BorderBrush="White" BorderThickness="3" FontSize="20" Opacity="0" Click="BtnRankPage_Click"/>
+        <Button x:Name="BtnHelpPage" Content="Help" HorizontalAlignment="Left" Margin="632,460,0,0" VerticalAlignment="Top" Width="141" Height="40" Foreground="White" Background="{x:Null}" BorderBrush="White" BorderThickness="3" FontSize="20" Opacity="0" Click="BtnHelpPage_Click"/>
+        <Label Content="Guitar" HorizontalAlignment="Left" Margin="92,239,0,0" VerticalAlignment="Top" FontSize="110" Height="152" Width="338" Background="{x:Null}" BorderThickness="0">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Red" Offset="0"/>
+                    <GradientStop Color="#FFEA8A00" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="HERO" HorizontalAlignment="Left" Margin="166,338,0,0" VerticalAlignment="Top" FontSize="110" Height="152" Width="338">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEA8A00" Offset="0"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                    <GradientStop Color="#FFF15600" Offset="0.374"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="KINECT" HorizontalAlignment="Left" Margin="98,457,0,0" VerticalAlignment="Top" FontSize="36" Height="56" Width="146" Foreground="#FF6BF10F" Background="{x:Null}"/>
         <Grid.Triggers>
             <EventTrigger RoutedEvent="Grid.Loaded">
                 <BeginStoryboard>
                     <Storyboard>
                         <DoubleAnimation
                                 Storyboard.TargetName="BtnGamePage"
-                                Storyboard.TargetProperty="Opacity" From="0" To=" 1" Duration="0:0:0.3" />
+                                Storyboard.TargetProperty="Opacity" From="0" To=" 1" Duration="0:0:0.3" >
+                            <DoubleAnimation.EasingFunction>
+                                <ExponentialEase EasingMode="EaseOut"></ExponentialEase>
+                            </DoubleAnimation.EasingFunction>
+                        </DoubleAnimation>
                         <ThicknessAnimation
                                 Storyboard.TargetName="BtnGamePage"
-                                Storyboard.TargetProperty="Margin" From="580,216,0,0" Duration="0:0:0.3"/>
+                                Storyboard.TargetProperty="Margin" From="580,216,0,0" Duration="0:0:0.3">
+                            <ThicknessAnimation.EasingFunction>
+                                <ExponentialEase EasingMode="EaseOut"></ExponentialEase>
+                            </ThicknessAnimation.EasingFunction>
+                        </ThicknessAnimation>
+                        <DoubleAnimation
+                                Storyboard.TargetName="BtnHelpPage"
+                                Storyboard.TargetProperty="Opacity" From="0" To=" 1" Duration="0:0:0.3" BeginTime="0:0:0.3"/>
+                        <ThicknessAnimation
+                                Storyboard.TargetName="BtnHelpPage"
+                                Storyboard.TargetProperty="Margin" From="580,461,0,0" Duration="0:0:0.3" BeginTime="0:0:0.3"/>
                     </Storyboard>
                 </BeginStoryboard>
                 <BeginStoryboard>
                     <Storyboard>
                         <DoubleAnimation
                                 Storyboard.TargetName="BtnOptionPage"
-                                Storyboard.TargetProperty="Opacity" From="0" To=" 1" Duration="0:0:0.3" BeginTime="0:0:0.1"/>
+                                Storyboard.TargetProperty="Opacity" From="0" To=" 1" Duration="0:0:0.3" BeginTime="0:0:0.1">
+                            <DoubleAnimation.EasingFunction>
+                                <ExponentialEase EasingMode="EaseOut"></ExponentialEase>
+                            </DoubleAnimation.EasingFunction>
+                        </DoubleAnimation>
                         <ThicknessAnimation
                                 Storyboard.TargetName="BtnOptionPage"
-                                Storyboard.TargetProperty="Margin" From="580,298,0,0" Duration="0:0:0.3" BeginTime="0:0:0.1"/>
+                                Storyboard.TargetProperty="Margin" From="580,298,0,0" Duration="0:0:0.3" BeginTime="0:0:0.1">
+                            <ThicknessAnimation.EasingFunction>
+                                <ExponentialEase EasingMode="EaseOut"></ExponentialEase>
+                            </ThicknessAnimation.EasingFunction>
+                        </ThicknessAnimation>
                         <DoubleAnimation
                                 Storyboard.TargetName="BtnRankPage"
-                                Storyboard.TargetProperty="Opacity" From="0" To=" 1" Duration="0:0:0.3" BeginTime="0:0:0.2"/>
+                                Storyboard.TargetProperty="Opacity" From="0" To=" 1" Duration="0:0:0.3" BeginTime="0:0:0.2">
+                            <DoubleAnimation.EasingFunction>
+                                <ExponentialEase EasingMode="EaseOut"></ExponentialEase>
+                            </DoubleAnimation.EasingFunction>
+                        </DoubleAnimation>
                         <ThicknessAnimation
                                 Storyboard.TargetName="BtnRankPage"
-                                Storyboard.TargetProperty="Margin" From="580,379,0,0" Duration="0:0:0.3" BeginTime="0:0:0.2"/>
+                                Storyboard.TargetProperty="Margin" From="580,379,0,0" Duration="0:0:0.3" BeginTime="0:0:0.2">
+                            <ThicknessAnimation.EasingFunction>
+                                <ExponentialEase EasingMode="EaseOut"></ExponentialEase>
+                            </ThicknessAnimation.EasingFunction>
+                        </ThicknessAnimation>
                     </Storyboard>
                 </BeginStoryboard>
             </EventTrigger>

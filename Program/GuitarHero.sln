@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuitarHeroController", "Gui
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuitarHeroModel", "GuitarHeroModel\GuitarHeroModel.csproj", "{986D5392-B749-4496-B16D-821FA8759F53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuitarHeroUnitTest", "GuitarHeroUnitTest\GuitarHeroUnitTest.csproj", "{528E62B9-790D-46EA-9FCC-636921FEC7A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{986D5392-B749-4496-B16D-821FA8759F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{986D5392-B749-4496-B16D-821FA8759F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{986D5392-B749-4496-B16D-821FA8759F53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{528E62B9-790D-46EA-9FCC-636921FEC7A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{528E62B9-790D-46EA-9FCC-636921FEC7A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{528E62B9-790D-46EA-9FCC-636921FEC7A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{528E62B9-790D-46EA-9FCC-636921FEC7A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

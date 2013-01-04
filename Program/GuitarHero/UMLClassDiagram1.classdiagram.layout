@@ -123,7 +123,7 @@
               </nestedChildShapes>
             </classShape>
             <classShape Id="f357fbb4-96ff-45ac-a318-f63ecd38ec60" absoluteBounds="3.125, 7.25, 1.125, 0.95263671875" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
-              <classMoniker Id="66ea852c-401d-4e33-b53a-ade9a7a2637f" LastKnownName="CMusicStream" />
+              <classMoniker Id="66ea852c-401d-4e33-b53a-ade9a7a2637f" LastKnownName="CMusicHit" />
               <nestedChildShapes>
                 <AttributeElementListCompartment Id="0786affe-d26d-477b-afd9-43fdf5d30b86" absoluteBounds="3.1400000000000006, 7.6400000000000006, 1.0950000000000002, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
                 <OperationElementListCompartment Id="5639db00-8278-4d26-8033-002cc6e4c334" absoluteBounds="3.14, 7.876318359375, 1.0950000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
@@ -149,7 +149,7 @@
           <packageMoniker Id="16d5f7b2-bd17-4399-92e8-d70014349d9d" LastKnownName="COptionPage" />
           <nestedChildShapes>
             <classShape Id="fe901709-bcb4-440b-b876-e88d90e5f909" absoluteBounds="5.875, 7, 2, 1.3064778645833339" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
-              <classMoniker Id="d03f2eb1-6e0f-4602-9f4e-098e658ee1c5" LastKnownName="COptionController" />
+              <classMoniker Id="d03f2eb1-6e0f-4602-9f4e-098e658ee1c5" LastKnownName="COptionPage" />
               <nestedChildShapes>
                 <AttributeElementListCompartment Id="86204aa9-66d2-4c63-8fd9-ac864c5227c0" absoluteBounds="5.8900000000000006, 7.39, 1.9700000000000002, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
                 <OperationElementListCompartment Id="3848f6ed-6ba2-433d-ac8a-7fa78acc1401" absoluteBounds="5.89, 7.626318359375, 1.9700000000000002, 0.58015950520833337" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
@@ -161,7 +161,7 @@
           <packageMoniker Id="8f0aa076-d8d9-4557-a224-565b0d82fb1b" LastKnownName="CRankPage" />
           <nestedChildShapes>
             <classShape Id="be44251e-d30c-4e78-8f90-d1ad95ba51bd" absoluteBounds="5.875, 9.25, 2, 1.3064778645833339" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
-              <classMoniker Id="237fc821-485e-4b93-9f08-8439748a86d6" LastKnownName="CRankController" />
+              <classMoniker Id="237fc821-485e-4b93-9f08-8439748a86d6" LastKnownName="CRankPage" />
               <nestedChildShapes>
                 <AttributeElementListCompartment Id="f2dca05f-aaae-4e31-b61e-ad94323c99fb" absoluteBounds="5.8900000000000006, 9.64, 1.9700000000000002, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
                 <OperationElementListCompartment Id="8e7345e8-f7b8-4ca4-b400-b95e7edb7737" absoluteBounds="5.89, 9.876318359375, 1.9700000000000002, 0.58015950520833337" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
@@ -173,7 +173,7 @@
           <packageMoniker Id="4652d8dd-3aae-4d7e-ad40-68bd18525167" LastKnownName="CHelpPage" />
           <nestedChildShapes>
             <classShape Id="5a98ecf0-fbe0-4224-9ece-4b21d81e591b" absoluteBounds="5.75, 11.25, 1.5, 1.1295572916666661" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
-              <classMoniker Id="3e660679-f3dd-4f22-bd03-e24a9603b567" LastKnownName="CHelpController" />
+              <classMoniker Id="3e660679-f3dd-4f22-bd03-e24a9603b567" LastKnownName="CHelpPage" />
               <nestedChildShapes>
                 <AttributeElementListCompartment Id="c9e32b47-12b5-4d09-bbaa-885493d9c32f" absoluteBounds="5.7650000000000006, 11.64, 1.4700000000000002, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
                 <OperationElementListCompartment Id="fa877ba1-e11d-4ad7-a77c-d052ee10ebcb" absoluteBounds="5.765, 11.876318359375, 1.4700000000000002, 0.40323893229166663" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />

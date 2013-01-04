@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="GuitarHeroView.GameEndNotification"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="500" Loaded="UserControl_Loaded_1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="103*"/>
+            <RowDefinition Height="397*"/>
+        </Grid.RowDefinitions>
+        <Rectangle x:Name="BackRect" Fill="Black" Margin="0,0,0,0" Stroke="White" StrokeThickness="3" Grid.RowSpan="2"/>
+        <Label x:Name="name1" Content="" HorizontalAlignment="Left" Margin="144,33,0,0" VerticalAlignment="Top" Width="100" Foreground="White" FontSize="14" Grid.Row="1"/>
+        <Label x:Name="score1" Content="" HorizontalAlignment="Left" Margin="296,33,0,0" VerticalAlignment="Top" Width="63" Foreground="White" FontSize="14" Grid.Row="1"/>
+        <Label x:Name="name2" Content="" HorizontalAlignment="Left" Margin="144,93,0,0" VerticalAlignment="Top" Width="100" Foreground="White" FontSize="14" Grid.Row="1"/>
+        <Label x:Name="name3" Content="" HorizontalAlignment="Left" Margin="144,153,0,0" VerticalAlignment="Top" Width="100" Foreground="White" FontSize="14" Grid.Row="1"/>
+        <Label x:Name="score2" Content="" HorizontalAlignment="Left" Margin="296,93,0,0" VerticalAlignment="Top" Width="63" Foreground="White" FontSize="14" Grid.Row="1"/>
+        <Label x:Name="score3" Content="" HorizontalAlignment="Left" Margin="296,153,0,0" VerticalAlignment="Top" Width="63" Foreground="White" FontSize="14" Grid.Row="1"/>
+        <Label x:Name="name4" Content="" HorizontalAlignment="Left" Margin="144,213,0,0" VerticalAlignment="Top" Width="100" Foreground="White" FontSize="14" Grid.Row="1"/>
+        <Label x:Name="score4" Content="" HorizontalAlignment="Left" Margin="296,213,0,0" VerticalAlignment="Top" Width="63" Foreground="White" FontSize="14" Grid.Row="1"/>
+        <Label x:Name="name5" Content="" HorizontalAlignment="Left" Margin="144,273,0,0" VerticalAlignment="Top" Width="100" Foreground="White" FontSize="14" Grid.Row="1"/>
+        <Label x:Name="score5" Content="" HorizontalAlignment="Left" Margin="296,273,0,0" VerticalAlignment="Top" Width="63" Foreground="White" FontSize="14" Grid.Row="1"/>
+        <Rectangle x:Name="rectNewRecord" Fill="Black" Margin="91,47,78,117" Stroke="White" StrokeThickness="3" Visibility="Visible" Grid.Row="1"/>
+        <StackPanel x:Name="panelNewRecord" HorizontalAlignment="Left" Height="190" Margin="100,61,0,0" VerticalAlignment="Top" Width="322" Visibility="Visible" Grid.Row="1">
+            <Label Content="New Record" Height="38" Margin="68,0,102,0" Foreground="White" FontSize="24"/>
+            <Label Content="Please enter your name:" Height="52" Margin="0,0,115,0" Foreground="White" FontSize="16"/>
+            <TextBox x:Name="txtName" Height="34" TextWrapping="Wrap" Text="Your Name Here" Margin="59,0,69,0" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" MouseLeftButtonUp="txtName_MouseLeftButtonUp" GotFocus="txtName_GotFocus"/>
+        </StackPanel>
+        <Button x:Name="btnConfirm" Content="Confirm" Margin="224,228,201,146" Background="{x:Null}" BorderBrush="White" Foreground="White" Click="btnConfirm_Click" Grid.Row="1"/>
+        <Label x:Name="labRecords" Content="Records" HorizontalAlignment="Left" Margin="160,41,0,0" VerticalAlignment="Top" Foreground="White" FontSize="36" Height="52" Width="159"/>
+        <Button x:Name="btnConfirm_Copy" Content="OK" Margin="206,319,181,43" Background="{x:Null}" BorderBrush="White" Foreground="White" Grid.Row="1" Click="btnConfirm_Copy_Click"/>
+
+
+    </Grid>
+    
+</UserControl>

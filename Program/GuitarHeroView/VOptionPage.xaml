@@ -1,8 +1,63 @@
-﻿<Window x:Class="GuitarHeroView.VOptionPage"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="VOptionPage" Height="768" Width="1024">
-    <Grid>
-        
+﻿<Page x:Class="GuitarHeroView.VOptionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1024"
+	Title="VOptionPage" Loaded="Page_Loaded_1">
+    <Grid Margin="0,0,0,0">
+        <Label Content="Guitar" HorizontalAlignment="Left" Margin="92,239,0,0" VerticalAlignment="Top" FontSize="110" Height="152" Width="338" Background="{x:Null}" BorderThickness="0">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Red" Offset="0"/>
+                    <GradientStop Color="#FFEA8A00" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="HERO" HorizontalAlignment="Left" Margin="166,338,0,0" VerticalAlignment="Top" FontSize="110" Height="152" Width="338">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEA8A00" Offset="0"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                    <GradientStop Color="#FFF15600" Offset="0.374"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="KINECT" HorizontalAlignment="Left" Margin="98,457,0,0" VerticalAlignment="Top" FontSize="36" Height="56" Width="146" Foreground="#FF6BF10F" Background="{x:Null}"/>
+    <Grid x:Name="OptGrid" Opacity="0.85" Background="#FF151515" Margin="-45,0,699,0">
+        <Grid.Triggers>
+            <EventTrigger RoutedEvent="Grid.Loaded">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ThicknessAnimation Storyboard.TargetName="OptGrid"
+                                Storyboard.TargetProperty="Margin" From="-337,0,991,0" Duration="0:0:0.5">
+                            <ThicknessAnimation.EasingFunction>
+                                <ExponentialEase EasingMode="EaseOut"></ExponentialEase>
+                            </ThicknessAnimation.EasingFunction>
+                        </ThicknessAnimation>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Grid.Triggers>
+        <Label Content="Difficulty" HorizontalAlignment="Left" Margin="58,209,0,0" VerticalAlignment="Top" Width="86" Foreground="White" FontSize="14"/>
+        <Button x:Name="BtnHardDecrease" Content="-" HorizontalAlignment="Left" Margin="145,211,0,0" VerticalAlignment="Top" Width="36" BorderThickness="3" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="14" Click="BtnHardDecrease_Click"/>
+        <Button x:Name="BtnHardIncrease" Content="+" HorizontalAlignment="Left" Margin="297,211,0,0" VerticalAlignment="Top" Width="36" BorderThickness="3" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="14" Click="BtnHardIncrease_Click"/>
+        <Label x:Name="LbDifficulty" Content="     Normal" HorizontalAlignment="Left" Margin="186,209,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14" Width="106"/>
+        <Label Content="Music" HorizontalAlignment="Left" Margin="58,282,0,0" VerticalAlignment="Top" Width="79" Foreground="White" FontSize="14"/>
+        <Button x:Name="BtnConfirm"  Content="Confirm" HorizontalAlignment="Left" Margin="77,575,0,0" VerticalAlignment="Top" Width="80" Background="{x:Null}" BorderBrush="White" Foreground="White" BorderThickness="3" Height="29" Click="BtnConfirm_Click"/>
+        <Button x:Name="BtnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="225,573,0,0" VerticalAlignment="Top" Width="80" BorderThickness="3" Background="{x:Null}" BorderBrush="White" Foreground="White" Height="31" Click="BtnCancel_Click"/>
+        <Button x:Name="BtnMusicLeft" Content="&lt;" HorizontalAlignment="Left" Margin="145,284,0,0" VerticalAlignment="Top" Width="36" BorderThickness="3" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="14" Click="BtnMusicLeft_Click"/>
+        <Button x:Name="BtnMusicRight" Content=">" HorizontalAlignment="Left" Margin="297,284,0,0" VerticalAlignment="Top" Width="36" BorderThickness="3" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="14" Click="BtnMusicRight_Click"/>
+        <Label x:Name="LbMusicName" Content="     Name" HorizontalAlignment="Left" Margin="186,284,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14" Width="106"/>
+        <Label Content="Elevation" HorizontalAlignment="Left" Margin="58,355,0,0" VerticalAlignment="Top" Width="79" Foreground="White" FontSize="14"/>
+        <Button x:Name="BtnTestKinect" Content="Test" HorizontalAlignment="Left" Margin="272,355,0,0" VerticalAlignment="Top" Width="61" Height="26" Background="{x:Null}" BorderBrush="White" Foreground="White" BorderThickness="3" Click="BtnTestKinect_Click"/>
+        <TextBox x:Name="TxtElevationAngle" HorizontalAlignment="Left" Height="26" Margin="145,355,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="114" Background="{x:Null}" BorderBrush="White" BorderThickness="3" Foreground="White" FontSize="14"/>
+        <Label Content="Option" Canvas.Left="157" Canvas.Top="38" Margin="132,10,10,608" FontSize="72" Foreground="White" FontFamily="Calibri"/>
+        <Canvas HorizontalAlignment="Left" Height="768" Margin="58,0,-699,0" VerticalAlignment="Top" Width="1011">
+            <Ellipse x:Name="lVShadow" Opacity="0" Fill="#FF1C66B0" HorizontalAlignment="Left" Height="63" Stroke="White" Canvas.Left="{Binding X}" Canvas.Top="{Binding Y}" StrokeThickness="6" VerticalAlignment="Top" Width="64" />
+            <Ellipse x:Name="rVShadow" Opacity="0" Fill="#FFB01C1C" HorizontalAlignment="Left" Height="62" Stroke="White" Canvas.Left="{Binding X}" Canvas.Top="{Binding Y}" StrokeThickness="6" VerticalAlignment="Top" Width="63" />
+            </Canvas>
     </Grid>
-</Window>
+    </Grid>
+</Page>

@@ -157,7 +157,7 @@
                   </class>
                 </packageHasNamedElement>
                 <packageHasNamedElement>
-                  <class Id="66ea852c-401d-4e33-b53a-ade9a7a2637f" name="CMusicStream" isAbstract="false" isLeaf="false" isActiveClass="false">
+                  <class Id="66ea852c-401d-4e33-b53a-ade9a7a2637f" name="CMusicHit" isAbstract="false" isLeaf="false" isActiveClass="false">
                     <elementDefinition Id="6b7ab7d1-230b-4874-8ec9-c3e3e18c64fb" />
                   </class>
                 </packageHasNamedElement>
@@ -199,7 +199,7 @@
               <elementDefinition Id="aa283945-f051-45f5-a20e-0005339c2991" />
               <packagedElements>
                 <packageHasNamedElement>
-                  <class Id="d03f2eb1-6e0f-4602-9f4e-098e658ee1c5" name="COptionController" isAbstract="false" isLeaf="false" isActiveClass="false">
+                  <class Id="d03f2eb1-6e0f-4602-9f4e-098e658ee1c5" name="COptionPage" isAbstract="false" isLeaf="false" isActiveClass="false">
                     <elementDefinition Id="2a07ba84-341a-427f-a0b8-f2c13d21f627" />
                     <ownedOperationsInternal>
                       <operation Id="49c1118e-8fe9-43a6-9316-9479aec2fdf9" name="LoadOption" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -219,7 +219,7 @@
               <elementDefinition Id="f91c6efd-b344-4557-9ef3-442056e9bd62" />
               <packagedElements>
                 <packageHasNamedElement>
-                  <class Id="237fc821-485e-4b93-9f08-8439748a86d6" name="CRankController" isAbstract="false" isLeaf="false" isActiveClass="false">
+                  <class Id="237fc821-485e-4b93-9f08-8439748a86d6" name="CRankPage" isAbstract="false" isLeaf="false" isActiveClass="false">
                     <elementDefinition Id="a33cf6a0-7c06-4707-b85b-27d15f2abec7" />
                     <ownedOperationsInternal>
                       <operation Id="98c4158b-e177-4c92-9cec-0b6c595dbea8" name="LoadRank" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -239,7 +239,7 @@
               <elementDefinition Id="bde11284-cce4-4346-a7f6-ac83ee3fee4e" />
               <packagedElements>
                 <packageHasNamedElement>
-                  <class Id="3e660679-f3dd-4f22-bd03-e24a9603b567" name="CHelpController" isAbstract="false" isLeaf="false" isActiveClass="false">
+                  <class Id="3e660679-f3dd-4f22-bd03-e24a9603b567" name="CHelpPage" isAbstract="false" isLeaf="false" isActiveClass="false">
                     <elementDefinition Id="846be02c-f070-416a-969d-ac5cbc364fc3" />
                     <ownedOperationsInternal>
                       <operation Id="a0254e24-75e4-42c2-9ac5-ca66eb59cb23" name="LoadHelp" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">

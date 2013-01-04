@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -53,9 +54,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GameEndNotification.xaml.cs" />
     <Compile Include="VGamePage.xaml.cs">
       <DependentUpon>VGamePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VHelpPage.xaml.cs">
+      <DependentUpon>VHelpPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VInfoPanel.xaml.cs" />
     <Compile Include="VNote.xaml.cs">
       <DependentUpon>VNote.xaml</DependentUpon>
     </Compile>
@@ -68,6 +75,10 @@
     <Compile Include="VStartPage.xaml.cs">
       <DependentUpon>VStartPage.xaml</DependentUpon>
     </Compile>
+    <Page Include="GameEndNotification.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -83,6 +94,14 @@
     <Page Include="VGamePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VHelpPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VInfoPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="VNote.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -132,6 +151,10 @@
     <ProjectReference Include="..\GuitarHeroController\GuitarHeroController.csproj">
       <Project>{9cef62cb-d20d-4d39-833a-7d36ca7245de}</Project>
       <Name>GuitarHeroController</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GuitarHeroModel\GuitarHeroModel.csproj">
+      <Project>{986d5392-b749-4496-b16d-821fa8759f53}</Project>
+      <Name>GuitarHeroModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

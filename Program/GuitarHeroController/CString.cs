@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace GuitarHeroController
 {
-    class CString
+    public class CString
     {
         public List<Note> notes;
         public string color;
+        private const int hitzoneTop = 560;
+        private const int hitzoneBottom = 660;
 
         public CString()
         {
@@ -26,7 +28,7 @@ namespace GuitarHeroController
             bool isReady = false;
             foreach (Note note in notes)
             {
-                if (note.Y > 650 && note.Y < 750)
+                if (note.isScorable && note.Y >= hitzoneTop && note.Y <= hitzoneBottom && note.isAlive)
                     isReady = true;
             }
             return isReady;
@@ -37,11 +39,44 @@ namespace GuitarHeroController
         /// <param name="frameRate"></param>
         public void advanceFrame(int frameRate)
         {
+            List<Note> listtodelete = new List<Note>();
             foreach (Note note in notes)
             {
                 note.Y += (768 / note.speed / frameRate);
-                note.Width += (125 / note.speed / frameRate);
-                note.X = (250 - note.Width) / 2;
+                if (note.Y > 768)
+                    listtodelete.Add(note);
+                if (!note.isAlive)
+                {
+                    if ((double)note.Opacity - 2 / (double)frameRate > 0)
+                        note.Opacity = (double)note.Opacity - 2 / (double)frameRate;
+                    note.Height += frameRate;
+                }
+            }
+            foreach (Note note in listtodelete)
+                notes.Remove(note);
+        }
+        /// <summary>
+        /// remove the note when it is hitted
+        /// </summary>
+        public void hit()
+        {
+            foreach (Note note in notes)
+            {
+                if (note.Y >= hitzoneTop && note.Y <= hitzoneBottom)
+                    note.isAlive = false;
+            }
+        }
+        /// <summary>
+        /// When hit at wrong time, the next note is turned unscorable
+        /// </summary>
+        public void updateScorability()
+        {
+            int i = 0;
+            while (i < notes.Count)
+            {
+                if (notes[i].Y >= hitzoneTop - 100 && notes[i].Y <= hitzoneTop)
+                    notes[i].isScorable = false;
+                break;
             }
         }
     }

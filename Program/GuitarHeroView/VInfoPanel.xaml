@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="GuitarHeroView.VInfoPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:GuitarHeroView"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="200">
+    <UserControl.Resources>
+        <local:ProgressFormatter x:Key="ProgressConverter"/>
+        <local:OpacityFormatter x:Key="OpacityConverter"/>
+    </UserControl.Resources>
+    <Grid>
+        <Label Content="Score" HorizontalAlignment="Left" Margin="21,53,0,0" VerticalAlignment="Top" FontSize="36" Foreground="White" RenderTransformOrigin="0.33,-0.214"/>
+        <Label x:Name="ScoreNum" Content="{Binding Score}" HorizontalAlignment="Left" Margin="21,114,0,0" VerticalAlignment="Top" Foreground="White" FontSize="60" Height="90" Width="129"/>
+        <Label Content="Progress" HorizontalAlignment="Left" Margin="21,204,0,0" VerticalAlignment="Top" FontSize="36" Foreground="White" RenderTransformOrigin="0.33,-0.214"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" VerticalAlignment="Top" Height="64" Margin="0,270,0,0" Stroke="Black"  Width="{Binding Progress, Converter= {StaticResource ProgressConverter}}"/>
+        <Rectangle HorizontalAlignment="Left" VerticalAlignment="Top" Height="{Binding Progress, Converter= {StaticResource ProgressConverter}}" Margin="0,270,0,0" Stroke="Black"  Width="64" Opacity="{Binding Progress, Converter= {StaticResource OpacityConverter}}" >
+            <Rectangle.LayoutTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.LayoutTransform>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFBF00F"/>
+                    <GradientStop Color="#FFEA0C0C" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+    </Grid>
+</UserControl>

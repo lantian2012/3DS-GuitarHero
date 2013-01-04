@@ -1,15 +1,58 @@
-﻿<Page x:Class="GuitarHeroView.VGamePage"
+﻿<Page
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GuitarHeroView" x:Class="GuitarHeroView.VGamePage" 
       mc:Ignorable="d" 
       d:DesignHeight="768" d:DesignWidth="1024"
-	Title="VGamePage" Loaded="Page_Loaded_1">
+	Title="VGamePage" Unloaded="Page_Unloaded_1">
 
-    <Grid Background="Black">
-        <Grid x:Name="GameBoard" HorizontalAlignment="Left" Height="737" Margin="10,0,0,0" VerticalAlignment="Top" Width="800"/>
-        <Ellipse x:Name="ell" Fill="#FFB2B2B2" HorizontalAlignment="Left" Height="140" Margin="84,520,0,0" Stroke="Black" VerticalAlignment="Top" Width="140"/>
+    <Grid x:Name="GridBackground" Background="Black">
+        <Grid.Triggers>
+            <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ThicknessAnimation Storyboard.TargetName="GameBoard" Storyboard.TargetProperty="Margin" Duration="0:0:0.9" From="-1000,0,1000,0" To="0,0,0,0" Completed="PageTransition_Completed" >
+                            <ThicknessAnimation.EasingFunction>
+                                <QuadraticEase EasingMode="EaseOut"/>
+                            </ThicknessAnimation.EasingFunction>
+                        </ThicknessAnimation>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Grid.Triggers>
+        <Label Content="KINECT" HorizontalAlignment="Left" Margin="98,457,0,0" VerticalAlignment="Top" FontSize="36" Height="56" Width="146" Foreground="#FF6BF10F" Background="{x:Null}"/>
+        <Label Content="Guitar" HorizontalAlignment="Left" Margin="92,239,0,0" VerticalAlignment="Top" FontSize="110" Height="152" Width="338" Background="{x:Null}" BorderThickness="0">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Red" Offset="0"/>
+                    <GradientStop Color="#FFEA8A00" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="HERO" HorizontalAlignment="Left" Margin="166,338,0,0" VerticalAlignment="Top" FontSize="110" Height="152" Width="338">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEA8A00" Offset="0"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                    <GradientStop Color="#FFF15600" Offset="0.374"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Grid x:Name="GameBoard" Opacity="0.8"  HorizontalAlignment="Left" Height="748" Margin="10,10,0,0" VerticalAlignment="Top" Width="810" Background="#FF19161D">
+            <Canvas HorizontalAlignment="Left" Height="748" VerticalAlignment="Top" Width="810">
+                <Rectangle Fill="#FF41E25E" HorizontalAlignment="Left" Height="748" VerticalAlignment="Top" Width="36" Canvas.Left="117"/>
+                <Rectangle Fill="#FFAC3D3D" HorizontalAlignment="Left" Height="748" VerticalAlignment="Top" Width="36" Canvas.Left="364"/>
+                <Rectangle Fill="#FF374EB6" HorizontalAlignment="Left" Height="748" VerticalAlignment="Top" Width="36" Canvas.Left="611"/>
+            </Canvas>
+        </Grid>
+        <Canvas x:Name="canv" HorizontalAlignment="Left" Height="748" Margin="10,10,0,0" VerticalAlignment="Top" Width="810">
+            <Label x:Name="LbHint" Opacity="0" Content=" Untracked" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF218383" BorderThickness="5" Foreground="White" Height="115" Width="415" FontSize="72" Canvas.Left="200" Canvas.Top="308"/>
+            <Ellipse x:Name="lVShadow" Opacity="0" Fill="#FF1C66B0" HorizontalAlignment="Left" Canvas.Left="{Binding X}" Canvas.Top="{Binding Y}" Height="63" Stroke="White" StrokeThickness="6" VerticalAlignment="Top" Width="63" />
+            <Ellipse x:Name="rVShadow" Opacity="0" Fill="#FFB01C1C" HorizontalAlignment="Left" Canvas.Left="{Binding X}" Canvas.Top="{Binding Y}" Height="63" Stroke="White" StrokeThickness="6" VerticalAlignment="Top" Width="63"/>
 
+        </Canvas>
+        <local:VInfoPanel x:Name="InfoPanel" HorizontalAlignment="Left" Margin="820,57,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Page>

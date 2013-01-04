@@ -1,8 +1,61 @@
-﻿<Window x:Class="GuitarHeroView.VRankPage"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="VRankPage" Height="768" Width="1024">
-    <Grid>
-        
+﻿<Page x:Class="GuitarHeroView.VRankPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1024"
+	Title="VRankPage">
+    <Grid Margin="0,0,0,0">
+        <Label Content="Guitar" HorizontalAlignment="Left" Margin="92,239,0,0" VerticalAlignment="Top" FontSize="110" Height="152" Width="338" Background="{x:Null}" BorderThickness="0">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Red" Offset="0"/>
+                    <GradientStop Color="#FFEA8A00" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="HERO" HorizontalAlignment="Left" Margin="166,338,0,0" VerticalAlignment="Top" FontSize="110" Height="152" Width="338">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEA8A00" Offset="0"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                    <GradientStop Color="#FFF15600" Offset="0.374"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="KINECT" HorizontalAlignment="Left" Margin="98,457,0,0" VerticalAlignment="Top" FontSize="36" Height="56" Width="146" Foreground="#FF42D342" Background="{x:Null}"/>
+    <Grid x:Name="OptGrid" Opacity="0.85" Background="#FF151515" Margin="-45,0,699,0">
+        <Grid.Triggers>
+            <EventTrigger RoutedEvent="Grid.Loaded">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ThicknessAnimation Storyboard.TargetName="OptGrid"
+                                Storyboard.TargetProperty="Margin" From="-337,0,991,0" Duration="0:0:0.4">
+                            <ThicknessAnimation.EasingFunction>
+                                <ExponentialEase EasingMode="EaseOut"></ExponentialEase>
+                            </ThicknessAnimation.EasingFunction>
+                        </ThicknessAnimation>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Grid.Triggers>
+        <Button x:Name="BtnBack" Content="Back" HorizontalAlignment="Left" Margin="165,573,0,0" VerticalAlignment="Top" Width="80" BorderThickness="3" Background="{x:Null}" BorderBrush="White" Foreground="White" Height="31" Click="BtnBack_Click"/>
+        <Label x:Name="name1" Content="" HorizontalAlignment="Left" Margin="96,247,0,0" VerticalAlignment="Top" Width="100" Foreground="White" FontSize="14"/>
+        <Label x:Name="score1" Content="" HorizontalAlignment="Left" Margin="248,247,0,0" VerticalAlignment="Top" Width="63" Foreground="White" FontSize="14"/>
+        <Label x:Name="name2" Content="" HorizontalAlignment="Left" Margin="96,307,0,0" VerticalAlignment="Top" Width="100" Foreground="White" FontSize="14"/>
+        <Label x:Name="name3" Content="" HorizontalAlignment="Left" Margin="96,367,0,0" VerticalAlignment="Top" Width="100" Foreground="White" FontSize="14"/>
+        <Label x:Name="score2" Content="" HorizontalAlignment="Left" Margin="248,307,0,0" VerticalAlignment="Top" Width="63" Foreground="White" FontSize="14"/>
+        <Label x:Name="score3" Content="" HorizontalAlignment="Left" Margin="248,367,0,0" VerticalAlignment="Top" Width="63" Foreground="White" FontSize="14"/>
+        <Label x:Name="name4" Content="" HorizontalAlignment="Left" Margin="96,427,0,0" VerticalAlignment="Top" Width="100" Foreground="White" FontSize="14"/>
+        <Label x:Name="score4" Content="" HorizontalAlignment="Left" Margin="248,427,0,0" VerticalAlignment="Top" Width="63" Foreground="White" FontSize="14"/>
+        <Label x:Name="name5" Content="" HorizontalAlignment="Left" Margin="96,487,0,0" VerticalAlignment="Top" Width="100" Foreground="White" FontSize="14"/>
+        <Label x:Name="score5" Content="" HorizontalAlignment="Left" Margin="248,487,0,0" VerticalAlignment="Top" Width="63" Foreground="White" FontSize="14"/>
+        <Label Content="Rank" HorizontalAlignment="Left" Margin="174,10,0,0" VerticalAlignment="Top" FontSize="72" Foreground="White" FontFamily="Calibri"/>
+            <Label x:Name="name1_Copy" Content="" HorizontalAlignment="Left" Margin="96,247,0,0" VerticalAlignment="Top" Width="100" Foreground="White" FontSize="14"/>
+            <Label x:Name="score1_Copy" Content="" HorizontalAlignment="Left" Margin="248,247,0,0" VerticalAlignment="Top" Width="63" Foreground="White" FontSize="14"/>
+            <Label Opacity="1" Content="Name" HorizontalAlignment="Left" Margin="96,187,0,0" VerticalAlignment="Top" Width="100" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            <Label Opacity="1" Content="Score" HorizontalAlignment="Left" Margin="248,187,0,0" VerticalAlignment="Top" Width="74" Foreground="White" FontSize="20" FontWeight="Bold"/>
+        </Grid>
     </Grid>
-</Window>
+</Page>
